@@ -1,0 +1,115 @@
+/* style sheet for the movie website for Unit 2 exam
+	Larry Fry III */
+	
+body{
+	background-color:#993399;
+}
+.container{
+	margin:auto;
+	background-color:#ffcc00;
+	max-width:1500px;
+	padding:10px;
+	border:solid black 10px;
+}
+
+.menu h2{
+	display:inline-block;
+}
+.menu{
+	text-align:center;
+}
+.menu h1{
+	font-weight:900;
+	color:#8f246b;
+}
+h1{
+	text-decoration: underline;
+	font-weight:bold;
+}
+
+a:link{
+	color:red;
+}
+a:visited{
+	color: purple;
+}
+a:hover{
+	color:green;
+}
+
+article{
+	max-width:800px;
+	margin:auto;
+	margin-bottom:20px;
+	padding:15px;
+	background-color: red;
+	min-height:215px;
+	border-radius: 25px;
+	border: solid black 5px;
+	font-size:130%;
+}
+article img{
+	float:left;
+	margin:15px;
+	width:125px;
+	height:200;
+}
+.imgfloatright{
+	float:right;
+}
+article.reviews{
+	display:none;
+}
+
+footer{
+	max-width:400px;
+	margin:auto;
+	margin-bottom:15px;
+	background-color: red;
+	border-radius: 25px;
+	border: solid black 3px;
+	text-align:center;
+}
+@media screen and (max-width:600px){
+	.menu{
+		float:left;
+		padding:30px;
+		display:inline;
+		max-width:80px;
+	}
+	.menu h1{color:white;}
+	article.movie{
+		float:right;
+	}
+	.container{
+		background-color:#993399;
+		border:none;
+	}
+		a:link{
+		color:white;
+	}
+	a:visited{
+		color:white;
+	}
+	a:hover{
+		color:white;
+	}
+	article.movie{
+		max-width:300px;
+	}
+}
+
+@media screen and (min-width:1300px){
+	article.movie{
+		float:left;
+	}
+	article.reviews{
+		display:block;
+		float:right;
+	}
+	.container{
+		height:1200px;
+	}
+	
+}
+
